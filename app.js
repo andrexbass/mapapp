@@ -8,8 +8,8 @@ var msg = process.env.texto;
 var response;
 
 app.get('/', function (req, res) {
-
     response = 'Value in the texto env var is => ' + msg + '\n';
+    res.send(response);
 });
 
 app.listen(8080, function () {
